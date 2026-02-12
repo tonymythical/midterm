@@ -1,69 +1,102 @@
 body {
-            background-color: #0056b3; /* Deep blue from the image */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+  background-color: #0056b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
 
-        .card {
-            background: #f8f9fa;
-            width: 90%;
-            max-width: 550px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
+.card {
+  background: #f8f9fa;
+  width: 90%;
+  max-width: 550px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
-        .banner {
-            height: 180px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('https://bit.ly/305-vacation') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-        }
+.banner {
+  height: 180px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://bit.ly/305-vacation") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
 
-        .banner h1 { font-size: 1.8rem; margin: 0; }
+.banner h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
 
-        form { padding: 30px; display: flex; flex-direction: column; gap: 15px; }
+form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-        .field-group { display: flex; flex-direction: column; }
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
 
-        label { font-size: 0.8rem; font-weight: bold; margin-bottom: 5px; color: #333; }
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
 
-        select, input {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background: transparent;
-        }
+select,
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+}
 
-        .error { color: #d9534f; font-size: 0.75rem; margin-top: 3px; height: 12px; }
+.error {
+  color: #d9534f;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  height: 12px;
+}
 
-        button {
-            margin: 20px auto 0;
-            width: 60%;
-            padding: 12px;
-            background-color: #004085;
-            color: white;
-            border: none;
-            border-radius: 25px; /* Rounded corners per requirements */
-            cursor: pointer;
-            font-weight: bold;
-        }
+button {
+  margin: 20px auto 0;
+  width: 60%;
+  padding: 12px;
+  background-color: #004085;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-        #thank-you { display: none; padding: 50px; text-align: center; }
+#thank-you {
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
 
-        footer { margin-top: 20px; color: white; font-size: 0.8rem; }
-        footer a { color: #ffc107; }
+footer {
+  margin-top: 20px;
+  color: white;
+  font-size: 0.8rem;
+}
+footer a {
+  color: #ffc107;
+}

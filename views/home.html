@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vacation Booking</title>
+    <link rel="icon" type="image/x-icon" href="https://bit.ly/305-vacation">
+    <link rel="stylesheet" href="/public/style/styles.css">
 </head>
 <body>
-    
+
+    <div class="card" id="app-container">
+        <div id="form-view">
+            <header class="banner">
+                <h1>Book Your Dream Vacation</h1>
+            </header>
+
+            <form id="vacationForm">
+                <div class="field-group">
+                    <label for="destination">Destination</label>
+                    <select id="destination">
+                        <option value="">Choose a destination...</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Italy">Italy</option>
+                    </select>
+                    <div id="destError" class="error"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="departureDate">Departure Date</label>
+                        <input type="date" id="departureDate">
+                        <div id="dateError" class="error"></div>
+                    </div>
+                    <div class="field-group">
+                        <label for="travelers">Number of Travelers</label>
+                        <input type="number" id="travelers" value="0">
+                        <div id="travError" class="error"></div>
+                    </div>
+                </div>
+
+                <button type="submit">Find My Vacation</button>
+            </form>
+        </div>
+
+        <div id="thank-you">
+            <h2>Thank you for your request!</h2>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/your-username/repo">GitHub Repository</a>
+    </footer>
+
+    <script src="/public/js/midterm.js"></script>
 </body>
 </html>

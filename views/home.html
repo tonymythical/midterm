@@ -15,16 +15,16 @@
                 <h1>Book Your Dream Vacation</h1>
             </header>
 
-            <form id="vacationForm">
+            <form id="vacationForm" action="/submit-order" method="post">
                 <div class="field-group">
                     <label for="destination">Destination</label>
                     <select id="destination">
                         <option value="">Choose a destination...</option>
-                        <option value="Hawaii">Hawaii</option>
-                        <option value="Iceland">Iceland</option>
-                        <option value="Japan">Japan</option>
-                        <option value="Greece">Greece</option>
-                        <option value="Italy">Italy</option>
+                        <option value="Bali, Indonesia">Bali, Indonesia</option>
+                        <option value="Paris, France">Paris, France</option>
+                        <option value="Tokyo, Japan">Tokyo, Japan</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="New York City, USA">New York City, USA</option>
                     </select>
                     <div id="destError" class="error"></div>
                 </div>
@@ -32,22 +32,18 @@
                 <div class="form-row">
                     <div class="field-group">
                         <label for="departureDate">Departure Date</label>
-                        <input type="date" id="departureDate">
+                        <input type="date" id="departureDate" name="departureDate">
                         <div id="dateError" class="error"></div>
                     </div>
                     <div class="field-group">
                         <label for="travelers">Number of Travelers</label>
-                        <input type="number" id="travelers" value="0">
+                        <input type="number" id="travelers" name="travelers" min="0"value="0">
                         <div id="travError" class="error"></div>
                     </div>
                 </div>
 
                 <button type="submit">Find My Vacation</button>
             </form>
-        </div>
-
-        <div id="thank-you">
-            <h2>Thank you for your request!</h2>
         </div>
     </div>
 

@@ -87,7 +87,6 @@ button {
 }
 
 #thank-you {
-  display: none;
   padding: 50px;
   text-align: center;
 }
@@ -99,4 +98,19 @@ footer {
 }
 footer a {
   color: #ffc107;
+}
+
+.back-link {
+    display: inline-block;
+    background-color: #004085;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #002752;
 }
